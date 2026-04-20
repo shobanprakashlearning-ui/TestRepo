@@ -45,6 +45,7 @@ public class LoginPageTest extends BaseTest {
 	@Description("checking user is able to login with valid credentials...")
 	@Severity(SeverityLevel.BLOCKER)
 	@Test(priority = Integer.MAX_VALUE)
+	//Login Test
 	public void loginTest() {
 		homePage = loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 		ChainTestListener.log("Home Page Title: " + homePage.getHomePageTitle());
